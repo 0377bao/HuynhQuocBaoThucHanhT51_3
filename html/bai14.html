@@ -6,12 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        .bai14 {
+            background-color: rgb(179, 184, 179);
+            padding: 10px;
+            display: inline-block;
+            text-align: left;
+            margin-top: 50px;
+        }
+        
+        .title {
+            display: inline-block;
+            width: 156px;
+        }
+        
+        .message {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .submit {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="bai14">
         <h1>Contact Us</h1>
+        <P>Use the following form to send a message to Eample Cafe</P>
+        <div>
+            <label class="title" for="">Your email: </label><input type="text">
+        </div>
+        <div class="message">
+            <label class="title" for="">Message: </label><textarea name="" id="" cols="30" rows="10"></textarea></div>
+        <div>
+            <p>How did you hear of us? <select name=" " id=" ">
+                <option value=" ">google</option>
+                <option value=" ">fb</option>
+                <option value=" ">ins</option>
+            </select></p>
+        </div>
 
+        <div>
+            <span class="title">Newsletter</span> <input type="checkbox"> <span>Ensure this box checked if you would like to recevie email update</span>
+        </div>
+
+        <input type="submit" value="Send message" class="submit">
     </div>
 </body>
 

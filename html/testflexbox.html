@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .menu-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid #777;
+            margin: 0;
+            padding-left: 0;
+        }
+        
+        .menu-item {
+            color: #777;
+            padding: 8px 8px;
+            min-width: 100px;
+            text-align: center;
+        }
+        
+        .menu-item:hover {
+            color: rgb(110, 173, 110);
+            cursor: pointer;
+        }
+        
+        .list-product {
+            margin: 0;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .list-product-item {
+            width: 24%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+        
+        .list-product-item:hover {
+            border: 1px solid #777;
+        }
+        
+        .list-product-item:hover .list-product-item-img {
+            transition: all 0.3s ease;
+            transform: translateY(-5px) rotate(-5deg);
+        }
+        
+        .list-product-item-img {
+            width: 200px;
+            padding: 10px;
+        }
+        
+        .list-product-item-name {
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .list-product-item-price {
+            font-size: 16px;
+            font-weight: 700;
+            color: rgb(50, 150, 50);
+        }
+        
+        .list-product-item-btn {
+            margin-top: 10px;
+            font-size: 12px;
+            color: rgb(50, 150, 50);
+            border: 1px solid rgb(50, 150, 50);
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 7px;
+            transition: all 0.3s linear;
+        }
+        
+        .list-product-item-btn:hover {
+            background-color: rgb(50, 150, 50);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menu-list">
+            <li class="menu-item">TRANG CHỦ</li>
+            <li class="menu-item">CÀ PHÊ</li>
+            <li class="menu-item">TRÀ</li>
+            <li class="menu-item">THỨC UỐNG</li>
+            <li class="menu-item">SẢN PHẨM</li>
+            <li class="menu-item">KHUYẾN MÃI</li>
+            <li class="menu-item">VỀ CHÚNG TÔI</li>
+            <li class="menu-item">THẺ</li>
+        </ul>
+    </div>
+
+    <ul class="list-product">
+        <li class="list-product-item">
+            <img class="list-product-item-img" src="https://phuclong.com.vn/uploads/dish/3c2d50a2c26783-hngtrsaphclongtrosaphclong.png" alt="">
+            <span class="list-product-item-name">Capochino - Vietnamo</span>
+            <span class="list-product-item-price">45.000 đ</span>
+            <span class="list-product-item-btn">ĐẶT HÀNG</span>
+        </li>
+        <li class="list-product-item">
+            <img class="list-product-item-img" src="https://phuclong.com.vn/uploads/dish/8a92bb4b37c012-cafe5mon01.png" alt="">
+            <span class="list-product-item-name">Lattle Lattle</span>
+            <span class="list-product-item-price">50.000 đ</span>
+            <span class="list-product-item-btn">ĐẶT HÀNG</span>
+        </li>
+        <li class="list-product-item">
+            <img class="list-product-item-img" src="https://phuclong.com.vn/uploads/dish/6e1c837ccd02b3-cafe5mon05.png" alt="">
+            <span class="list-product-item-name">Ngọc Viễn Đông</span>
+            <span class="list-product-item-price">55.000 đ</span>
+            <span class="list-product-item-btn">ĐẶT HÀNG</span>
+        </li>
+        <li class="list-product-item">
+            <img class="list-product-item-img" src="https://phuclong.com.vn/uploads/dish/729626b6440e43-cphcaramelxay.png" alt="">
+            <span class="list-product-item-name">Phin trà sửa</span>
+            <span class="list-product-item-price">60.000 đ</span>
+            <span class="list-product-item-btn">ĐẶT HÀNG</span>
+        </li>
+    </ul>
+</body>
+
+</html>
